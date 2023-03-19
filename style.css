@@ -1,0 +1,18 @@
+.square{
+    width: 100px;
+    height: 100px;
+    background: rgb(189, 118, 118);
+    animation: rotate 1s infinite both;
+}
+
+@keyframes rotate{
+    from{
+        transform: perspective(500px) rotateX(0deg)  rotateY(0deg);
+    }
+    50%{
+        transform:perspective(500px) rotateX(180deg) rotateY(0deg) ;
+    }
+    to{
+        transform: perspective(500px) rotateX(180deg) rotateY(180deg);
+    }
+}
